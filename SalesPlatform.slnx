@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/deploy/" />
+  <Folder Name="/docs/" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Ordering/" />
+  <Folder Name="/src/Services/Ordering/ApplicationCore/">
+    <Project Path="src/Services/Ordering/ApplicationCore/Ordering.Domain/Ordering.Domain.csproj" Id="fe87a5e0-8ed8-49d0-99a4-bc1352ca7c27" />
+  </Folder>
+  <Folder Name="/src/Services/Ordering/EndPoints/" />
+  <Folder Name="/src/Services/Ordering/Infrastructure/" />
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Services/" />
+  <Folder Name="/tests/Services/Ordering/">
+    <Project Path="tests/Services/Ordering/Ordering.Domain.Tests/Ordering.Domain.Tests.csproj" Id="828be8c7-8fbf-465f-94c3-1a2d77649c15" />
+  </Folder>
+</Solution>

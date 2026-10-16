@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FrameworkDomainLibrary" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Orders\DTOs\" />
+    <Folder Include="Models\Orders\BusinessRules\" />
+    <Folder Include="Models\Orders\DomainEvents\" />
+    <Folder Include="Models\Orders\Creation\" />
+  </ItemGroup>
+
+</Project>
