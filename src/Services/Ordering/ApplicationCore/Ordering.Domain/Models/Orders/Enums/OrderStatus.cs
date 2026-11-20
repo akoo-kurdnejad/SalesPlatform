@@ -3,11 +3,15 @@
     public enum OrderStatus
     {
         Pending = 1,
-        AwaitingPayment = 2,
-        Confirmed = 3,
-        Rejected = 4,
-        Cancelled = 5,
-        Shipped = 6,
-        Completed = 7
+        StockReserved = 2,
+        AwaitingPayment = 3,
+        PaymentSuccess = 4,
+        PaymentFailed = 5,
+        StockFailed = 6,
+        Confirmed = 7,
+        Shipped = 8,
+        Completed = 9,
+        Cancelled = 10,
+        Rejected = 11
     }
 }

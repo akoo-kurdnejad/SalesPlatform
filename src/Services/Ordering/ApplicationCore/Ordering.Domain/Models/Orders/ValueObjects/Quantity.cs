@@ -20,6 +20,23 @@ namespace Ordering.Domain.Models.Orders.ValueObjects
             return new Quantity(value);
         }
 
+        public Quantity Add(Quantity other)
+        {
+            ArgumentNullException.ThrowIfNull(other);
+            return Create(checked(Value + other.Value));
+        }
+
+        public Quantity Subtract(Quantity other)
+        {
+            ArgumentNullException.ThrowIfNull(other);
+
+            var result = checked(Value - other.Value);
+            if (result <= 0)
+                throw new DomainException("Resulting quantity must be greater than zero.");
+
+            return new Quantity(result);
+        }
+
         protected override IEnumerable<object?> GetEqualityComponents()
         {
             yield return Value;

@@ -1,14 +1,20 @@
 <Solution>
   <Folder Name="/deploy/" />
-  <Folder Name="/docs/" />
+  <Folder Name="/docs/">
+    <File Path="C:/Users/KURDISTAN/OneDrive/Desktop/SalesPlatform-Checkpoint..md" />
+  </Folder>
   <Folder Name="/src/" />
   <Folder Name="/src/Services/" />
   <Folder Name="/src/Services/Ordering/" />
   <Folder Name="/src/Services/Ordering/ApplicationCore/">
     <Project Path="src/Services/Ordering/ApplicationCore/Ordering.Domain/Ordering.Domain.csproj" Id="fe87a5e0-8ed8-49d0-99a4-bc1352ca7c27" />
   </Folder>
-  <Folder Name="/src/Services/Ordering/EndPoints/" />
-  <Folder Name="/src/Services/Ordering/Infrastructure/" />
+  <Folder Name="/src/Services/Ordering/EndPoints/">
+    <Project Path="src/Services/Ordering/EndPoints/Ordering.WebApi/Ordering.WebApi.csproj" Id="a4aae712-45dd-4c4d-b793-b2b648eaba2c" />
+  </Folder>
+  <Folder Name="/src/Services/Ordering/Infrastructure/">
+    <Project Path="src/Services/Ordering/Infrastructure/Ordering.DataAccess/Ordering.DataAccess.csproj" Id="5cdf1dee-81c4-4097-8aae-fbb7f7afef8e" />
+  </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/Services/" />
   <Folder Name="/tests/Services/Ordering/">

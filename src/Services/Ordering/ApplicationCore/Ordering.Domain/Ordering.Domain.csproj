@@ -13,8 +13,6 @@
   <ItemGroup>
     <Folder Include="Models\Orders\DTOs\" />
     <Folder Include="Models\Orders\BusinessRules\" />
-    <Folder Include="Models\Orders\DomainEvents\" />
-    <Folder Include="Models\Orders\Creation\" />
   </ItemGroup>
 
 </Project>
