@@ -8,6 +8,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="11.0.2" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.15" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.0">
 		  <PrivateAssets>all</PrivateAssets>
@@ -24,6 +25,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\ApplicationCore\Ordering.ApplicationService\Ordering.ApplicationService.csproj" />
 		<ProjectReference Include="..\..\Infrastructure\Ordering.DataAccess\Ordering.DataAccess.csproj" />
 	</ItemGroup>
 

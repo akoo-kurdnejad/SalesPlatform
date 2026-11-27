@@ -1,6 +1,9 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Ordering.DataAccess;
 using Ordering.DataAccess.Ef;
+using Ordering.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +15,12 @@ builder.Services.AddOrderingDataAccessEf(builder.Configuration);
 
 var connectionString = builder.Configuration.GetConnectionString("OrderingDatabase")!;
 builder.Services.AddHealthChecks().AddNpgSql(connectionString, name: "postgresql");
+
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+    containerBuilder.AddOrderingModules();
+});
 #endregion Configuration
 
 var app = builder.Build();

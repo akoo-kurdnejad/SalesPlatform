@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Ordering.DataAccess.Ef.Repositories;
 using Ordering.DataAccess.Interceptors;
-using Ordering.Domain.Models.Orders.Repository;
 
 namespace Ordering.DataAccess.Ef;
 
@@ -24,8 +22,6 @@ public static class DataAccessEFSetupDependency
                     errorCodesToAdd: null);
             }).AddInterceptors(outboxInterceptor);
         });
-
-        services.AddScoped<IOrderRepository, OrderRepository>();
         return services;
     }
 }

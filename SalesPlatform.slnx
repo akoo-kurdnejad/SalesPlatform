@@ -7,6 +7,7 @@
   <Folder Name="/src/Services/" />
   <Folder Name="/src/Services/Ordering/" />
   <Folder Name="/src/Services/Ordering/ApplicationCore/">
+    <Project Path="src/Services/Ordering/ApplicationCore/Ordering.ApplicationService/Ordering.ApplicationService.csproj" Id="84d4a152-a5f3-4371-bddc-aa7cb688f80d" />
     <Project Path="src/Services/Ordering/ApplicationCore/Ordering.Domain/Ordering.Domain.csproj" Id="fe87a5e0-8ed8-49d0-99a4-bc1352ca7c27" />
   </Folder>
   <Folder Name="/src/Services/Ordering/EndPoints/">
